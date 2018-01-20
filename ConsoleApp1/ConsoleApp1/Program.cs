@@ -149,13 +149,51 @@ namespace ConsoleApp1
 
 
         }
+
+        static void ejercicio3()
+        {
+            Boolean n1 = true, n2 = false, n3 = true;
+
+
+            Console.WriteLine( "Valores : \n n1 : " + n1 + "\n n2 : " + n2 + "\n n3 : " + n3 + "\n\n" );
+            Console.WriteLine("n1 ^ n2 = " + (n1 ^ n2));
+            Console.WriteLine("(n1 & !n2) | n3 = " + ((n1 & !n2)|n3));
+            Console.WriteLine("(n1 | n2) & !n3 = " + ((n1 | n2)& !n3));
+        }
+        static void ejercicio4()
+        {
+            int n1 = 5, n2 = 10;
+            Console.WriteLine("el valor de n1 es : " + n1 + " el valor de n2 es : " + n2 +
+                " y la suma de n1 mas n2 es : " + ( n1 + n2 ) );
+
+        }
+        static void ejercicio5()
+        {
+            const Double IVA = 0.21;
+            Double remera = 59.90, pantalon = 99.90, campera = 149.90;
+
+            Console.WriteLine(" el valor de las remeras es : " + remera + "\t iva : " + (remera * IVA)
+                + " \n total : " + ((remera * IVA) + remera) ) ;
+
+
+            Console.WriteLine(" el valor de los pantalones es : " + pantalon + "\t iva : " + (pantalon * IVA)
+                + " \n total : " + ((pantalon * IVA) + pantalon));
+
+
+            Console.WriteLine(" el valor de las camperas es : " + campera + "\t iva : " + (campera * IVA)
+                + " \n total : " + ((campera * IVA) + campera));
+
+        }
         static void Main(string[] args)
         {
             //trabajo1();
             //trabajo2();
             //trabajo3();
             //ejercicio1();
-            ejercicio2();
+            //ejercicio2();
+            //ejercicio3();
+            //ejercicio4();
+            ejercicio5();
             Console.ReadKey();
 
         }
