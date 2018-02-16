@@ -113,7 +113,7 @@ namespace BonusWhile
                     chance--;
                     if(chance == 2)
                 {
-                    Console.Write("te quedan 2 chances");
+                    Console.WriteLine("te quedan 2 chances");
                 }
                     if(chance == 1)
                 {
